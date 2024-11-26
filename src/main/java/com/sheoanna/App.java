@@ -15,7 +15,8 @@ public final class App {
 
         DNIView view = new DNIView();
         DNIModel model = new DNIModel(0);
-        DNIController controller = new DNIController(model, view);
+        DniController controller = new DniController(model, view);
 
+        controller.start();
     }
 }

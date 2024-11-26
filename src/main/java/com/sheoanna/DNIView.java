@@ -13,5 +13,8 @@ public class DNIView {
     public void showDniLetter(int dniNumber, char dniLetter) {
         System.out.println("The letter for DNI " + dniNumber + " is: " + dniLetter);
     }
-    
+
+    public void showError(String message) {
+        System.out.println("Error: " + message);
+    }
 }
