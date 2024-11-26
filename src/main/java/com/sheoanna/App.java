@@ -11,7 +11,7 @@ public final class App {
      */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            int dniNumber = 0;
+            int dniNumber = -1;
             boolean isValid = false;
 
             while (!isValid) {
@@ -24,11 +24,9 @@ public final class App {
                         System.out.println("Invalid input. Please enter a numeric value.");
                     }
                 }
-
             char dniLetter = DniCalculator.calculateDniLetter(dniNumber);
             System.out.println("The letter for DNI " + dniNumber + " is: " + dniLetter);
         } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
