@@ -1,7 +1,5 @@
 package com.sheoanna;
 
-import java.util.Scanner;
-
 public final class App {
     private App() {
     }
