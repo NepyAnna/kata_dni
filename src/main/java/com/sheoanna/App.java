@@ -1,7 +1,5 @@
 package com.sheoanna;
 
-import java.util.Scanner;
-
 public final class App {
     private App() {
     }
@@ -11,6 +9,7 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner scanner = new Scanner(System.in);
         int dniNumber = -1;
         boolean isValid = false;
@@ -33,5 +32,15 @@ public final class App {
 
         char dniLetter = DniCalculator.calculateDniLetter(dniNumber);
         System.out.println("The letter for DNI " + dniNumber + " is: " + dniLetter);
+=======
+        System.out.println("Welcome to the DNI Calculator!");
+        System.out.println("------------------------------");
+
+        DNIView view = new DNIView();
+        DNIModel model = new DNIModel(0);
+        DniController controller = new DniController(model, view);
+
+        controller.start();
+>>>>>>> feature/MVVmC
     }
 }
